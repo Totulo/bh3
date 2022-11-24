@@ -1,0 +1,103 @@
+.page {
+  background: url(../assets/background/wall-bg.jpg) center top no-repeat;
+  padding: 92px 0 30px;
+  background-size: cover;
+  .wallpapers-title {
+    font-size: 60px;
+    font-weight: bold;
+    color: #96dbff;
+    text-align: center;
+    padding: 50px 0;
+    :first-child {
+      color: #fff;
+    }
+    :last-child {
+      display: inline-block;
+      font-size: 40px;
+      transform: skew(-11deg);
+      margin-left: 15px;
+    }
+  }
+  .animate-swiper {
+    position: relative;
+    margin: 0 auto;
+    padding: 17px 15px;
+    border-radius: 10px;
+    width: 1264px;
+    height: 342px;
+    background: url(../assets/swiper/bg.png) no-repeat;
+    background-size: 100% 100%;
+    .swiper-container {
+      position: relative;
+      margin-left: auto;
+      margin-right: auto;
+      overflow: hidden;
+      list-style: none;
+      padding: 0;
+      z-index: 1;
+      .swiper {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        .swiper-slide {
+          width: 100%;
+          height: 100%;
+          position: relative;
+        }
+      }
+    }
+  }
+  .paper-wrap {
+    width: 1264px;
+    margin: 0 auto;
+    border-radius: 5px;
+    padding: 30px 20px;
+    background: url(../assets/background/perper-bg.png) center top no-repeat;
+    .paper-list {
+      flex-wrap: wrap;
+      margin-bottom: 10px;
+      font-size: 14px;
+      .paper-item:nth-child(3n+3) {
+        margin-right: 0;
+      }
+      .paper-item {
+        width: 400px;
+        height: 265px;
+        padding-top: 7px;
+        margin-bottom: 20px;
+        margin-right: 12px;
+        cursor: pointer;
+        background: url(../assets/background/paper-list-bg.png) no-repeat;
+        
+        a {
+          display: block;
+          overflow: hidden;
+          width: 384px;
+          height: 216px;
+          margin: 0 auto;
+          img {
+            display: block;
+            margin: 0 auto;
+            width: 384px;
+            height: 216px;
+            transition: all .3s linear;
+            &:hover {
+              transform: scale(1.2);
+            }
+          }
+        }
+        div {
+          transform: skew(-11deg);
+          font-size: 20px;
+          font-weight: bold;
+          color: #333;
+          text-align: center;
+          line-height: 45px;
+        }
+      }
+    }
+    .pag {
+      text-align: center;
+    }
+  }
+}

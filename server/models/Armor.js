@@ -3,7 +3,7 @@ const mongoose = require('mongoose')
 const schema = new mongoose.Schema({
     armor: { type: String },
     avater: { type: String },
-    parent: { type: mongoose.SchemaTypes.ObjectId, ref: 'Valkyrie' },
+    parent: { type: mongoose.SchemaTypes.ObjectId, ref: 'Category' },
     birth: { type: String },
     weapon: { type: String },
     skills: [{
@@ -16,4 +16,4 @@ const schema = new mongoose.Schema({
 
 })
 
-module.exports = mongoose.model('Armor', schema)
+module.exports = mongoose.model('Armor', schema, 'armors')

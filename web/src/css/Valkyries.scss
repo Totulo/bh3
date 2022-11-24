@@ -1,0 +1,79 @@
+.page {
+  background: url(../assets/background/rolebg.jpg) center top no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 1200px;
+  padding: 92px 0;
+  .valkyries-title {
+    font-size: 60px;
+    font-weight: bold;
+    color: #96dbff;
+    text-align: center;
+    padding: 50px 0;
+    :first-child {
+      color: #fff;
+    }
+    :last-child {
+      display: inline-block;
+      font-size: 40px;
+      transform: skew(-11deg);
+      margin-left: 15px;
+    }
+  }
+  .valkyries-wrap {
+    border: 2px solid rgba(255,255,255,.1);
+    border-radius: 10px;
+    width: 1246px;
+    margin: 0 auto;
+    padding: 20px 20px 0;
+    .valkyries-item-title {
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 10px;
+      &:first-child {
+        font-size: 30px;
+        color: #fff;
+        transform: skew(-11deg);
+        font-weight: bold;
+        flex-shrink: 0;
+      }
+      .role-line {
+        flex: 1;
+        height: 3px;
+        background: linear-gradient(to left, transparent, rgba(255, 255, 255, 0.5), transparent);
+      }
+      
+    }
+    .roles {
+      flex-wrap: wrap;
+      margin-bottom: 10px;
+      
+      .base-role-btn {
+        width: 147px;
+        height: 148px;
+        background: url(../assets/img/role-btn.png) no-repeat;
+        background-size: 100% 100%;
+        text-align: right;
+        font-size: 14px;
+        font-weight: bold;
+        color: #000;
+        padding-top: 6px;
+        padding-left: 5px;
+        padding-right: 1px;
+        cursor: pointer;
+        &:hover {
+          background: url(../assets/img/role-btn-1.png) no-repeat;
+        }
+        .imgbox {
+          position: relative;
+          img {
+            display: block;
+            width: 100%;
+            position: relative;
+            z-index: 1;
+          }
+        }
+      }
+    }
+  }
+}

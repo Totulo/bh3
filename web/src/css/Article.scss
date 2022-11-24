@@ -1,0 +1,102 @@
+.page {
+  background: #a4c9fe url(../assets/background/news-detail-bg.33ab41d.jpg) center top no-repeat;
+  padding: 150px 0 64px;
+  .news-wrap {
+    width: 1246px;
+    margin: 0 auto;
+    border: 2px solid #646597;
+    background: #272c71;
+    padding: 6px;
+    border-radius: 5px;
+    .news-detail {
+      background: #101663;
+      padding: 20px;
+      .btn {
+        display: block;
+        border-radius: 16px;
+        width: 198px;
+        height: 61px;
+        line-height: 61px;
+        font-size: 30px;
+        font-weight: bold;
+        color: #fff;
+        text-align: center;
+        background: url(../assets/img/btn.png) no-repeat;
+        cursor: pointer;
+        margin-bottom: 24px;
+        &:hover {
+          background: url(../assets/img/btn-1.png) no-repeat;
+        }
+      }
+      .banner {
+        width: 100%;
+        margin: 0 auto 40px;
+      }
+      .article {
+        .article-hd {
+          position: relative;
+          margin-bottom: 30px;
+          .line {
+            position: absolute;
+            width: calc(100% - 14px);
+            bottom: -5px;
+            left: 12px;
+            height: 1px;
+            background: rgba(98,234,245,.2);
+          }
+          .article-title {
+            font-size: 40px;
+            font-weight: bold;
+            text-align: center;
+            color: #fff;
+            margin-bottom: 20px;
+            span {
+              color: #60e5f1;
+            }
+          }
+          .article-date {
+            text-align: right;
+            font-size: 20px;
+            color: #fff;
+            padding-bottom: 38px;
+            span {
+              margin-left: 10px;
+              color: #62eaf5;
+            }
+          }
+        }
+        .article-bd {
+          font-size: 16px;
+          color: #dcdcdc;
+          line-height: 36px;
+        }
+        .line-box {
+          position: relative;
+          margin-bottom: 40px;
+          .line {
+            position: absolute;
+            width: calc(100% - 14px);
+            bottom: -5px;
+            left: 12px;
+            height: 1px;
+            background: rgba(98,234,245,.2);
+          }
+        }
+      }
+    }
+    .top-btn {
+      position: fixed;
+      cursor: pointer;
+      width: 83px;
+      height: 80px;
+      bottom: 50px;
+      right: 50%;
+      background: url(../assets/img/top-btn.jfif) no-repeat;
+      background-size: 100% 100%;
+      transform: translate(720px);
+      &:hover {
+        background: url(../assets/img/top-btn-1.jfif) no-repeat;
+      }
+    }
+  }
+}

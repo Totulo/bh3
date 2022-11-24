@@ -1,0 +1,139 @@
+//reset
+* {
+  box-sizing: border-box;
+  outline: none;
+  line-height: 100%;
+}
+*, *::after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+a, a:hover, a:focus, a:visited {
+  text-decoration: none;
+  color: #fff;
+  color: inherit;
+  color: unset;
+  outline: none;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.2em;
+}
+
+@keyframes scan {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(88px);
+  }
+}
+
+//color
+$colors: (
+  "l-blue": #62eaf5,
+  "blue": #0097de,
+  "dark-blue": #2e448f,
+  "yellow": #d7e784,
+  "rgb-1": rgba(0,0,0,.8),
+  "white": #fff,
+);
+
+@each $key, $color in $colors {
+  .text-#{$key} {
+    color: $color
+  }
+  .bg-#{$key} {
+    background-color: $color;
+  }
+}
+
+//text
+@each $var in (left, center, right) {
+  .text-#{$var} {
+    text-align: $var;
+  }
+}
+
+//flex
+.d-flex {
+  display: flex;
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+$flex-jc: (
+  start: flex-start,
+  end: flex-end,
+  center: center,
+  between: space-between,
+  around: space-around,
+);
+
+@each $key, $value in $flex-jc {
+  .jc-#{$key} {
+    justify-content: $value;
+  }
+}
+
+//nav
+.nav {
+  position: fixed;
+  height: 5.75rem;
+  width: 100%;
+  z-index: 999;
+  align-items: center;
+  border-bottom: .125rem solid rgba(64,206,255,.84);
+  .nav-warp {
+    margin: 0 auto;
+    align-items: center;
+    .nav-left {
+      font-weight: bold;
+      position: relative;
+      .nav-item {
+        width: 130px;
+        cursor: pointer;
+        position: relative;
+        line-height: 1.2rem;
+        &.active {
+          color: #fff;
+        } 
+        div {
+          font-size: 1.1875rem;
+        }
+        span {
+          font-size: .75rem;
+        }
+        
+      }
+      
+    }
+    .nav-right {
+      font-weight: bold;
+      cursor: pointer;
+      text-align: center;
+      font-size: .875rem;
+      line-height: 1.4rem;
+      .nav-r-item {
+        margin-left: 2.875rem;
+        a {
+          &:hover, &:focus {
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+}

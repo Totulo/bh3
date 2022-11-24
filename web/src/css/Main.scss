@@ -1,0 +1,69 @@
+.page {
+  flex-direction: column;
+  .nav-item::after {
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 50px;
+    background: url(../assets/nav.png)center center no-repeat;
+    top: 50%;
+    background-size: 100% 100%;
+    right: -12px;
+    margin-top: -25px;
+  }
+  a:hover, a:focus {
+    color: #fff;
+  }
+  .nav-item {
+    &.active {
+      color: #fff;
+    }
+  }
+  .nav-item:hover, .nav-item:focus {
+    color: #fff;
+  }
+  .footer {
+  display: flex;
+  background: #000;
+  color: #999;
+  padding: 30px 0;
+  font-size: 14px;
+  padding-bottom: 20px;
+  overflow: auto;
+  .footer-contet {
+    width: 1280px;
+    margin: 0 auto;
+    .footer-logo {
+      flex-direction: column;
+      align-items: center;
+      min-height: 94px;
+      min-width: 300px;
+      .logo  {
+        height: 42px;
+      }
+      .game-logo {
+        width: 110px;
+        height: auto;
+      }
+      span {
+        width: 1px;
+        height: 28px;
+        background: #666;
+        margin-left: 25px;
+        margin-right: 25px;
+      }
+    }
+  }
+  .footer-info {
+    color: #aaa;
+    margin-left: 60px;
+    line-height: 24px;
+    .footer-lisnk-list a {
+      margin: 0 8px 0 5px;
+      &:hover {
+        text-decoration: underline ;
+      }
+    }
+  }
+}
+}
